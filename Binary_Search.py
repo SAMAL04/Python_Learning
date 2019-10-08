@@ -29,9 +29,10 @@ class bin_search:
            n=n+1
            if n == arr_val:
                v=x
+               print(v)
                break
         #print(v)
-        if inp >= v:        
+        if inp > v:        
            arr_val1 =len(a)-arr_val
            #list1 = []
            k=0
@@ -40,7 +41,7 @@ class bin_search:
                if k > arr_val1:
                    list1.append(i)
            #print(list1)
-        elif inp <= v:
+        elif inp < v:
            arr_val1 = arr_val
            #list1 = []
            k=0
@@ -48,7 +49,8 @@ class bin_search:
                k=k+1
                if k < arr_val1:
                    list1.append(i)
-           #print(list1)
+           #print(list1)       
+            
         
         return list1   
            
@@ -60,15 +62,12 @@ class bin_search:
         
 a = 2,3,5,7,8,10,34
 b1 = bin_search()
-#print(b1)
-label1 : qw
-find = b1.get_inp(a)
-centre = b1.find_centre(find)
 inp = 8
-a = b1.centre_value(centre,a,inp)
-goyo\\
-if a != inp:
-    goto label1;
-print(a)
-##comp_inp = b1.compare_inp(a,cen_value,8,centre)
-#print(cen_value)
+#print(b1)
+while inp != a:
+    find = b1.get_inp(a)
+    centre = b1.find_centre(find)
+    a = b1.centre_value(centre,a,inp)
+    print(a)
+    if inp == a:
+        break
