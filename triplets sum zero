@@ -1,0 +1,27 @@
+def add(a):
+    for i in range(len(a)):
+        #print(i)
+        first = a[i]
+        #print("First")
+        #print(first)
+        for j in range(len(a)):
+            #if j < len(a)-1:
+            if first != a[j]:
+                sec = a[j]
+                #print("SEC")
+                #print(sec)   
+                for k in range(len(a)):
+                     if sec != a[k] and first != a[k]:
+                            third = a[k]
+                            addd = first + sec+third
+                            if addd == 0:                            
+                                print("First")
+                                print(first,sec,third)
+                                #print("SEC")
+                                #print(sec) 
+                                #print("Third")
+                                #print(third)
+                            
+    
+a=[-3,-2,-1,0,1,2,3]
+add(a)
