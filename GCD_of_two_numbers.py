@@ -12,6 +12,9 @@ def gcd(a,b):
 
 m = 12
 n = 16
-a=gcd(m,n)
-for c in a:
-   print(c)
+if (int(m) and int(n)):
+    a=gcd(m,n)
+    for c in a:
+        print(c)
+else:
+    print("The value should be integer")
