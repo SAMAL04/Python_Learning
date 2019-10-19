@@ -10,8 +10,7 @@ def root(List,insert):
     for n in List:
         s = s+1
         if n == insert:
-            break
-            
+            break            
 
     ind =s-1
     #insert = List[ind]
@@ -20,8 +19,8 @@ def root(List,insert):
     if insert > List[root1]:
         List[root1] =insert
         List[ind] = root_ele
-    print(List)
-    if List[0] < insert is not None:
+    #print(List)
+    if List[0] < insert:
         root(List,insert)
         print(List)
 list  = [9,7,6,4,2,3]
