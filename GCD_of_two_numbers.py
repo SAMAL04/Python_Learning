@@ -10,8 +10,8 @@ def gcd(a,b):
             gcd.append(i)
     return(gcd)  
 
-m = 25
-n = 25
+m = 12
+n = 16
 a=gcd(m,n)
 for c in a:
-    print(c)
+   print(c)
