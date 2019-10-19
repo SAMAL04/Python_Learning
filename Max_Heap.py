@@ -28,3 +28,4 @@ list  = [9,7,6,4,2,3]
 insert = 10
 s = add(list,insert)
 root(s,insert)
+#list has been inserted with 10 which has to max-heap insertion
